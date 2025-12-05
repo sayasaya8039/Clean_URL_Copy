@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Clean URL Copy",
+  "description": "広告・アフィリエイト・CM等の余分なパラメータを排除してURLをコピーします。",
+  "version": "0.2.0",
+  "permissions": [
+    "contextMenus",
+    "scripting",
+    "activeTab",
+    "tabs",
+    "clipboardWrite",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "Clean URL Copy",
+    "default_popup": "options.html"
+  },
+  "options_page": "options.html"
+}
+
